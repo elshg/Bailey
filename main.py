@@ -4,6 +4,7 @@ from requests import get, post
 from datetime import datetime, date
 from zhdate import ZhDate
 import sys
+import datetime
 import os
  
  
@@ -220,7 +221,12 @@ if __name__ == "__main__":
     # 接收的用户
     users = config["user"]
     # 传入地区获取天气信息
-    region = config["region"]
+    now_today = datetime.datetime.now().strftime('%Y-%m-%d')
+    today_week = datetime.date(int(now_today[0: 4]), int(now_today[5: 7]), int(now_today[8: 10])).weekday()
+    if today_week in [0, 1, 2, 3, 4]:
+        region = config["region1"]
+    else:
+        region = config["region2"]
     weather, temp, wind_dir = get_weather(region)
     note_ch = config["note_ch"]
     note_en = config["note_en"]

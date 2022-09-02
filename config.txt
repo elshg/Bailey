@@ -2,8 +2,10 @@
 # 公众号配置
 # 公众号appId
 "app_id": "wx2db3cfad00057113",
+#正式号 "app_id": "wxb31934c7f62a7be6",
 # 公众号appSecret
 "app_secret": "983de6088fb78d654115eb257e305d19",
+#正式号 "app_secret": "6167fa05aff7d0316e8caccf897b1c42",
 # 模板消息id
 "template_id": "8JSom_lwlhJw-AhKB7oeHWX9fEknO1yfATtmKF1ldHE",
 # 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如["weixin1", "weixin2"]
@@ -13,7 +15,8 @@
 # 和风天气apikey
 "weather_key": "8fea3961d57b436d8f3b7dde77b30f2e",
 # 所在地区，可为省，城市，区，县，同时支持国外城市，例如伦敦
-"region": "武城",
+"region1": "武城",
+"region2": "平原",
 # 生日1，修改名字为对应需要显示的名字，如果生日为农历，在最前面加上r即可
 "birthday1": {"name": "刘小灿", "birthday": "r1996-09-09"},
 # 生日2
